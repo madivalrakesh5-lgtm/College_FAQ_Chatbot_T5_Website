@@ -1,0 +1,513 @@
+{
+  "college_name": "SDMCET Dharwad",
+  "notice": "Demo knowledge base — replace sample answers with verified details from your college before publishing.",
+  "intents": [
+    {
+      "tag": "college_timing",
+      "topic": "Timings",
+      "patterns": [
+        "What are the college timings",
+        "When does college start",
+        "When does college close",
+        "college opening time",
+        "college closing time"
+      ],
+      "answer": " 8am to 12:30pm is the college timing."
+    },
+    {
+      "tag": "office_timing",
+      "topic": "Timings",
+      "patterns": [
+        "What are office timings",
+        "When does the office close",
+        "office opening hours",
+        "Is the office open now",
+        "administrative office timing"
+      ],
+      "answer": "The office timing should be confirmed with your college office. Update this answer in kb.json with the official hours."
+    },
+    {
+      "tag": "library_timing",
+      "topic": "Library",
+      "patterns": [
+        "When does the library close",
+        "What are library timings",
+        "library opening time",
+        "Is the library open",
+        "When can I visit the library"
+      ],
+      "answer": "Please check your library notice for current hours. Add the official library timings to kb.json."
+    },
+    {
+      "tag": "library_books",
+      "topic": "Library",
+      "patterns": [
+        "How can I borrow a book",
+        "book issue rules",
+        "library book borrowing",
+        "How many books can I borrow",
+        "library lending period"
+      ],
+      "answer": "Library borrowing limits and loan periods are college-specific. Please add the verified rules here."
+    },
+    {
+      "tag": "library_membership",
+      "topic": "Library",
+      "patterns": [
+        "How do I get library membership",
+        "library card",
+        "How to get a library card",
+        "library membership process"
+      ],
+      "answer": "Ask the library desk about registration and required documents. Replace this with your college's official process."
+    },
+    {
+      "tag": "library_location",
+      "topic": "Library",
+      "patterns": [
+        "Where is the library",
+        "library location",
+        "How do I reach the library",
+        "which block is the library in",
+        "library near which building"
+      ],
+      "answer": "The library is located between the MBA block and the Placement Cell block."
+    },
+    {
+      "tag": "exam_timetable",
+      "topic": "Examination",
+      "patterns": [
+        "When is the exam timetable released",
+        "exam schedule",
+        "Where can I find exam dates",
+        "semester exam timetable",
+        "exam date sheet"
+      ],
+      "answer": "Exam timetables are published through official college or department notices. Add the official portal or notice location here."
+    },
+    {
+      "tag": "exam_hallticket",
+      "topic": "Examination",
+      "patterns": [
+        "How do I download my hall ticket",
+        "exam admit card",
+        "hall ticket download",
+        "Where is my exam ticket"
+      ],
+      "answer": "Please use your university's official student portal to access your hall ticket. Add the correct portal instructions here."
+    },
+    {
+      "tag": "exam_results",
+      "topic": "Examination",
+      "patterns": [
+        "When will results be announced",
+        "check exam results",
+        "semester results",
+        "Where can I see my marks",
+        "result publication date"
+      ],
+      "answer": "Results are announced by the university or examination cell. Add your official result link and process here."
+    },
+    {
+      "tag": "exam_revaluation",
+      "topic": "Examination",
+      "patterns": [
+        "How to apply for revaluation",
+        "rechecking exam paper",
+        "photocopy of answer script",
+        "revaluation application"
+      ],
+      "answer": "Revaluation rules and deadlines depend on the university. Please check the official exam notification and update this answer."
+    },
+    {
+      "tag": "admission_process",
+      "topic": "Admission",
+      "patterns": [
+        "How can I get admission",
+        "admission process",
+        "How to apply for college",
+        "steps for admission",
+        "college application procedure"
+      ],
+      "answer": "Admission requirements depend on the course and current admission cycle. Add the official application steps here."
+    },
+    {
+      "tag": "admission_documents",
+      "topic": "Admission",
+      "patterns": [
+        "Which documents are needed for admission",
+        "documents required",
+        "what certificates should I bring",
+        "admission document list"
+      ],
+      "answer": "Commonly requested documents may include qualifying marksheets, ID and photographs, but requirements vary. Confirm and add your official list."
+    },
+    {
+      "tag": "admission_eligibility",
+      "topic": "Admission",
+      "patterns": [
+        "What is the eligibility for admission",
+        "minimum marks required",
+        "who can apply",
+        "course eligibility criteria"
+      ],
+      "answer": "Eligibility varies by course and admission rules. Add the verified eligibility criteria for each programme here."
+    },
+    {
+      "tag": "admission_deadline",
+      "topic": "Admission",
+      "patterns": [
+        "What is the last date for admission",
+        "admission deadline",
+        "application closing date",
+        "when do applications close"
+      ],
+      "answer": "Deadlines change each admission cycle. Please refer to the latest official admission notice and add the current date here."
+    },
+    {
+      "tag": "fees",
+      "topic": "Admission",
+      "patterns": [
+        "What is the admission fee",
+        "How much are college fees",
+        "tuition fee details",
+        "fee structure",
+        "How do I pay my college fees"
+      ],
+      "answer": "Fees vary by course and category. Add your college's verified fee structure and payment instructions here."
+    },
+    {
+      "tag": "departments",
+      "topic": "Departments",
+      "patterns": [
+        "Which departments are available",
+        "list of courses",
+        "what courses do you offer",
+        "departments in college",
+        "available programmes"
+      ],
+      "answer": "Please add your college's actual departments and programmes to this answer."
+    },
+    {
+      "tag": "department_contact",
+      "topic": "Departments",
+      "patterns": [
+        "How do I contact my department",
+        "department office phone",
+        "HOD contact details",
+        "department email address"
+      ],
+      "answer": "Contact your department office or check the official college directory. Add verified department contacts here."
+    },
+    {
+      "tag": "faculty_contact",
+      "topic": "Departments",
+      "patterns": [
+        "How can I contact a teacher",
+        "faculty email",
+        "lecturer contact details",
+        "teacher office hours"
+      ],
+      "answer": "Please use the official faculty directory. Publish only contact details approved for student use."
+    },
+    {
+      "tag": "cse_department_location",
+      "topic": "Departments",
+      "patterns": [
+        "Where is the CSE department",
+        "computer science department location",
+        "CSE block location",
+        "how to reach CSE department",
+        "where is the CSE building"
+      ],
+      "answer": "The CSE department is located just above (upstairs of) the Administrative block."
+    },
+    {
+      "tag": "cse_seminar_hall",
+      "topic": "Departments",
+      "patterns": [
+        "Where is the CSE seminar hall",
+        "seminar hall location",
+        "computer science seminar hall",
+        "CSE seminar hall"
+      ],
+      "answer": "The CSE seminar hall is inside the CSE department."
+    },
+    {
+      "tag": "c_programming_lab",
+      "topic": "Departments",
+      "patterns": [
+        "Where is the C programming lab",
+        "C lab location",
+        "programming lab",
+        "where is the computer lab",
+        "C programming lab location"
+      ],
+      "answer": "The C programming lab is also inside the CSE department, along with the CSE seminar hall."
+    },
+    {
+      "tag": "faculty_govind_negalur",
+      "topic": "Faculty",
+      "patterns": [
+        "Who is Govind Negalur",
+        "Prof Govind Negalur",
+        "Govind Negalur contact",
+        "Govind Negalur email",
+        "Govind Negalur qualification"
+      ],
+      "answer": "Prof. Govind Negalur is an Assistant Professor in the Computer Science & Engineering department at SDMCET, Dharwad. He completed his B.E. in 2007 and M.Tech in 2014, both from SDMCET Dharwad. He has guided many UG and PG students, conducted several workshops, and published 3 papers in international journals/conferences (topics include a cloud-based learning environment, IoT with Cloud, trust-based matrix factorization for recommendations, and EEG-based driver drowsiness detection). He has given FDP/student workshops on Cloud Computing, IoT and LaTeX across colleges in Karnataka, Andhra Pradesh and Goa. Phone: 974 014 3982. Email: govind.negalur@sdmcet.ac.in. In the 1st semester CS B Div timetable he is the instructor for Introduction to AI and its Application."
+    },
+    {
+      "tag": "faculty_rani_shetty",
+      "topic": "Faculty",
+      "patterns": [
+        "Who is Rani Shetty",
+        "Dr Rani Shetty",
+        "Rani Shetty contact",
+        "Rani Shetty email",
+        "Rani Shetty qualification"
+      ],
+      "answer": "Dr. Rani Shetty is an Assistant Professor in the Computer Science & Engineering department at SDMCET, Dharwad. She completed her B.E. in 2012 from REC College, Hulkoti, and her Master's in 2014 from SDMCET Dharwad (Qualifications: B.E., M.Tech, Ph.D.). She has guided many UG and PG students, published 3 papers in international journals/conferences, and is the Faculty Advisor for the IEEE Women in Engineering Affinity Group. She has been a resource person for an FDP on 'E-Content Creation' at SDMCET and for a talk on 'Digital India' organized by Rotary Club, Dharwad. Phone: 973 882 7107. Email: ranishetty1990@sdmcet.ac.in. In the 1st semester CS B Div timetable she is the instructor for Principles of C Programming."
+    },
+    {
+      "tag": "faculty_kavya_kajagar",
+      "topic": "Faculty",
+      "patterns": [
+        "Who is Kavya Kajagar",
+        "Prof Kavya K Kajagar",
+        "Kavya Kajagar contact",
+        "Kavya Kajagar email",
+        "Kavya Kajagar department"
+      ],
+      "answer": "Prof. Kavya K Kajagar is an Assistant Professor in the Electrical and Electronics Engineering department at SDMCET, Dharwad. She completed her B.E. in Electrical & Electronics from Tontadarya College of Engineering, Gadag, and her Master's in Electrical Power System from SDMCET Dharwad (Qualifications: B.E., M.Tech). She joined on 30-09-2024 on a contractual basis and is UG faculty, with 1 national/international conference paper and 1 national/international journal paper. Phone: 8867882293 or 0836-2328337 (Ext. 8337). Email: kavyakajagar21@gmail.com. In the 1st semester CS B Div timetable she is the instructor for Introduction to Electrical Engineering."
+    },
+    {
+      "tag": "timetable_cs_b_sem1",
+      "topic": "Timetable",
+      "patterns": [
+        "CS B division timetable",
+        "1st semester CS B timetable",
+        "CSE B div time table",
+        "semester 1 timetable computer science",
+        "class timetable CS B",
+        "ODD semester timetable 2026-27"
+      ],
+      "answer": "Department of Computer Science & Engineering, Semester I, Division B, ODD Academic Year 2026-27 (effective from 03-08-2026). Classes run from morning to about 5:00 PM with a tea break in the morning and a lunch break in the afternoon, and Saturday has the Mathematics (26UMATCS11) lab. Please check the official timetable notice from the CSE department for exact day-wise slots and room numbers. The timetable is signed by the HOD CSE, Dean (Academic Program) and Principal."
+    },
+    {
+      "tag": "timetable_cs_b_courses",
+      "topic": "Timetable",
+      "patterns": [
+        "What subjects are in 1st semester CS",
+        "course list semester 1 CSE",
+        "subjects in CS B division",
+        "course codes first semester",
+        "total credits first semester CS",
+        "who teaches which subject in CS B"
+      ],
+      "answer": "Semester I (CS stream, Div B, total 20 credits): 26UMATCS11 Mathematics-I for CS Stream (4 credits, Dr Prakash Badiger); 26UCHECS12 Chemistry for CS Stream (4 credits, Dr Asma Tatagar); 26UPCP13 Principles of C Programming (3 credits, Dr Rani Shetty); 26UESC141 Introduction to Electrical Engineering (3 credits, Prof. Kavya); 26UETC151 Introduction to AI and its Application (3 credits, Prof. Govind Negalur); 26UPWS16 Professional Writing Skills in English (1 credit, Dr Shashikant Kurodi); 26UICO17 Indian Constitution (1 credit, Prof. M P Vastrad); 26UBEC18 Biology for Engineers (1 credit, Prof. Tanveer Ahmed)."
+    },
+    {
+      "tag": "attendance",
+      "topic": "Examination",
+      "patterns": [
+        "What is the attendance requirement",
+        "minimum attendance percentage",
+        "attendance shortage rules",
+        "How much attendance do I need"
+      ],
+      "answer": "Attendance requirements are governed by your university and college rules. Add the official policy here."
+    },
+    {
+      "tag": "transport",
+      "topic": "Facilities",
+      "patterns": [
+        "Is college bus available",
+        "college transport routes",
+        "bus facility",
+        "How do I use college transport"
+      ],
+      "answer": "Please add verified bus routes, fees and transport office details here."
+    },
+    {
+      "tag": "bus_fee",
+      "topic": "Facilities",
+      "patterns": [
+        "How much is the bus fee",
+        "college bus charges",
+        "transport fee",
+        "bus pass cost"
+      ],
+      "answer": "Transport fees are separate from admission fees and vary by route. Add your college's verified bus fee details here."
+    },
+    {
+      "tag": "hostel",
+      "topic": "Facilities",
+      "patterns": [
+        "Is hostel available",
+        "hostel facilities",
+        "How to apply for hostel",
+        "college accommodation"
+      ],
+      "answer": "Add hostel availability, application process, fees and warden contact details after verification. The Salmala Boys Hostel is located near the playground."
+    },
+    {
+      "tag": "canteen",
+      "topic": "Facilities",
+      "patterns": [
+        "Is there a canteen",
+        "food facility",
+        "canteen timings",
+        "Where can I buy lunch"
+      ],
+      "answer": "Please add canteen location, timings and available services here."
+    },
+    {
+      "tag": "wifi",
+      "topic": "Facilities",
+      "patterns": [
+        "Is WiFi available on campus",
+        "campus internet",
+        "How to connect to college WiFi",
+        "internet access"
+      ],
+      "answer": "Ask your IT support team for approved network access. Add the official connection steps here."
+    },
+    {
+      "tag": "parking",
+      "topic": "Facilities",
+      "patterns": [
+        "Is parking available",
+        "two wheeler parking",
+        "where can I park",
+        "vehicle parking rules"
+      ],
+      "answer": "Add campus parking locations, eligibility and rules here."
+    },
+    {
+      "tag": "medical",
+      "topic": "Facilities",
+      "patterns": [
+        "Is medical help available",
+        "first aid on campus",
+        "campus health centre",
+        "emergency medical facility"
+      ],
+      "answer": "For an emergency, contact local emergency services or campus security. Add your college's verified health support contacts here."
+    },
+    {
+      "tag": "auditorium_location",
+      "topic": "Facilities",
+      "patterns": [
+        "Where is the auditorium",
+        "auditorium location",
+        "How to reach the auditorium",
+        "where are the college programs held",
+        "main auditorium"
+      ],
+      "answer": "The auditorium is located at the center of the college campus."
+    },
+    {
+      "tag": "alumni_block_location",
+      "topic": "Facilities",
+      "patterns": [
+        "Where is the alumni block",
+        "alumni office location",
+        "alumni association building",
+        "where is the alumni building"
+      ],
+      "answer": "The Alumni block is near the SDMCET back gate."
+    },
+    {
+      "tag": "playground_location",
+      "topic": "Clubs",
+      "patterns": [
+        "Where is the playground",
+        "playground location",
+        "ground near hostel",
+        "where is the sports ground",
+        "cricket ground location"
+      ],
+      "answer": "The playground is located near the Salmala Boys Hostel."
+    },
+    {
+      "tag": "indoor_sports_location",
+      "topic": "Clubs",
+      "patterns": [
+        "Where is the indoor sports",
+        "indoor stadium location",
+        "indoor games location",
+        "where can I play table tennis or carrom",
+        "indoor sports complex"
+      ],
+      "answer": "The indoor sports facility is near the playground."
+    },
+    {
+      "tag": "clubs",
+      "topic": "Clubs",
+      "patterns": [
+        "Which clubs are there",
+        "student clubs",
+        "How can I join a club",
+        "clubs and societies"
+      ],
+      "answer": "Please add the active clubs, eligibility and joining process for your college. For women in engineering, IEEE Women in Engineering Affinity Group is active, with Dr. Rani Shetty as Faculty Advisor."
+    },
+    {
+      "tag": "sports",
+      "topic": "Clubs",
+      "patterns": [
+        "What sports facilities are available",
+        "sports club",
+        "playground facilities",
+        "How to join sports"
+      ],
+      "answer": "The college has a playground near the Salmala Boys Hostel and an indoor sports facility near the playground. Add verified sports timings and coach or coordinator details here."
+    },
+    {
+      "tag": "events",
+      "topic": "Events",
+      "patterns": [
+        "What events are coming up",
+        "college fest date",
+        "upcoming college events",
+        "Where are event announcements posted"
+      ],
+      "answer": "Event schedules change frequently. Check official notices and add the current event calendar link here."
+    },
+    {
+      "tag": "contact",
+      "topic": "Contact",
+      "patterns": [
+        "What is the college phone number",
+        "college contact number",
+        "How do I contact the college",
+        "college email address"
+      ],
+      "answer": "Please add your college's official phone number, email and website here."
+    },
+    {
+      "tag": "location",
+      "topic": "Contact",
+      "patterns": [
+        "Where is the college located",
+        "college address",
+        "How do I reach campus",
+        "college location"
+      ],
+      "answer": "Please add the complete official campus address and directions link here."
+    },
+    {
+      "tag": "campus_map",
+      "topic": "Contact",
+      "patterns": [
+        "campus layout",
+        "campus map",
+        "Where are the buildings located",
+        "how is the campus arranged",
+        "main places in college"
+      ],
+      "answer": "Campus layout: the Library is between the MBA block and the Placement Cell block. The CSE department is above the Administrative block, and it contains the CSE seminar hall and the C programming lab. The Auditorium is at the center of the college. The Alumni block is near the SDMCET back gate. The Playground is near the Salmala Boys Hostel, and the Indoor sports facility is near the playground."
+    }
+  ]
+}
